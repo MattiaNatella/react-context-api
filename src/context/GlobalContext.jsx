@@ -14,7 +14,6 @@ const GlobalProvider = ({ children }) => {
     const fetchData = () => {
         axios.get(`${baseApiUrl}/posts`)
             .then(res => {
-
                 setPostsLists(res.data)
             })
     }
@@ -30,7 +29,7 @@ const GlobalProvider = ({ children }) => {
     )
 }
 
-//useGloblContext conterrà lui stesso tutti gli elementi definiti nella prop value di GlobalContext.Provider
+//useGloblContext conterrà lui stesso tutti gli elementi definiti nella prop "value" di GlobalContext.Provider
 
 const useGlobalContext = () => useContext(GlobalContext)
 

@@ -1,15 +1,18 @@
 import { useGlobalContext } from "../context/GlobalContext"
+import PostCard from "./PostCard"
 
 const PostsLists = () => {
 
+    //recupero la lista dei post destrutturando la proprietà postsList dall'oggetto useGlobalContext
     const { postsList } = useGlobalContext()
 
     return (
-        <ul className="list-group">
-            {postsList.map(post => (
-                <li key={post.id} className="list-group-item">{post.title}</li>
-            ))}
-        </ul>
+        <div className="container">
+            <div className="row">
+                <PostCard />
+            </div>
+        </div>
+
     )
 }
 
