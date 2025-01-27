@@ -5,7 +5,7 @@ const GlobalContext = createContext();
 
 const GlobalProvider = ({ children }) => {
 
-    //qui inseriremo tutta la logica e i dati da esportare globalmente
+    //qui inserirò tutta la logica e i dati da esportare globalmente
 
     const baseApiUrl = import.meta.env.VITE_BASE_API_URL
 
